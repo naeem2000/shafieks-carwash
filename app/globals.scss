@@ -18,6 +18,15 @@ html {
     color: var(--global);
 }
 
+body {
+    position: relative;
+}
+
+section {
+    position: relative;
+    z-index: 2;
+}
+
 a {
     color: unset;
     cursor: pointer;

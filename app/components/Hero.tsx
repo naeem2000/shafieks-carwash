@@ -1,5 +1,10 @@
 import React from 'react';
+import '../styles/hero.scss';
 
 export default function Home() {
-	return <div>Hero</div>;
+	return (
+		<section id='hero' className='hero'>
+			Hero
+		</section>
+	);
 }

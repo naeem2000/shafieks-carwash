@@ -1,5 +1,6 @@
 nav {
     background: var(--blue);
+    position: relative;
 
     .nav-body {
         display: flex;
@@ -48,41 +49,16 @@ nav {
     .mobile-nav {
         display: none;
     }
-}
 
-nav {
-    background: var(--blue);
-
-    .nav-body {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 0;
-
-        ol {
-            display: flex;
-            list-style: none;
-            padding-left: 25px;
-
-            li {
-                color: #ffffff;
-            }
-        }
-
-        button {
-            padding: 19px 25px;
-            border-radius: 60px;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 1.5px;
-            margin-right: 25px;
-        }
+    .mobile-menu {
+        display: none;
     }
 
-    .mobile-nav {
+    .menu-open {
         display: none;
     }
 }
+
 
 @media screen and (max-width: 768px) {
     nav {
@@ -187,6 +163,31 @@ nav {
             >div {
                 border-radius: 5px;
                 border: 1px solid var(--border-color);
+            }
+        }
+
+        .mobile-menu {
+            position: absolute;
+            display: block;
+            width: 100%;
+            transition: all ease .5s;
+            transform: translatey(0);
+            background: var(--blue);
+            z-index: -1;
+            padding-bottom: 20px;
+
+            ol {
+
+                li {
+                    padding: 5px 0px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    list-style: none;
+                    color: #ffffff;
+                    padding: 15px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
             }
         }
     }
