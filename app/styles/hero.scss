@@ -1,46 +1,57 @@
-    .slick-prev::before,
-    .slick-next::before {
-        font-size: 50px !important;
-        color: rgba(256, 256, 256, .5) !important;
-        border-radius: 100%;
-        transition: all .2s ease;
-    }
+.hero {
+    background-color: var(--white);
+    transition: all ease .5s;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .slick-prev:hover::before,
-    .slick-next:hover::before {
-        color: red !important;
-    }
+    .hero-body {
+        position: relative;
+        max-width: 1366px;
 
-    .slick-prev {
-        left: 20px !important;
-        z-index: 2;
-    }
+        .hero-text {
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    .slick-next {
-        right: 50px !important;
-        z-index: 2;
-    }
+            h1 {}
+        }
 
-    .hero {
-        background-color: var(--white);
-        transition: all ease .5s;
-        padding-top: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .slick-prev::before,
+        .slick-next::before {
+            font-size: 50px !important;
+            color: rgba(256, 256, 256, .5) !important;
+            border-radius: 100%;
+            transition: all .2s ease;
+        }
 
-        .hero-body {
-            max-width: 1366px;
+        .slick-prev:hover::before,
+        .slick-next:hover::before {
+            color: var(--red) !important;
+        }
 
-            >div {
+        .slick-prev {
+            left: 20px !important;
+            z-index: 2;
+        }
 
+        .slick-next {
+            right: 50px !important;
+            z-index: 2;
+        }
 
-                img {
-                    width: 100%;
-                    height: auto;
-                }
+        .image {
+            img {
+                width: 100%;
+                height: auto;
             }
-
-
         }
     }
+}
+
+@media screen and (max-width: 320px) {}

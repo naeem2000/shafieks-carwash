@@ -84,6 +84,31 @@ nav {
                 border: 1px solid var(--border-color);
             }
         }
+
+        .mobile-menu {
+            position: absolute;
+            display: block;
+            width: 100%;
+            transition: all ease .5s;
+            transform: translatey(0);
+            background: var(--blue);
+            z-index: 1;
+            padding-bottom: 20px;
+
+            ol {
+
+                li {
+                    padding: 5px 0px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    list-style: none;
+                    color: #ffffff;
+                    padding: 15px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+            }
+        }
     }
 }
 
@@ -111,6 +136,31 @@ nav {
                 border: 1px solid var(--border-color);
             }
         }
+
+        .mobile-menu {
+            position: absolute;
+            display: block;
+            width: 100%;
+            transition: all ease .5s;
+            transform: translatey(0);
+            background: var(--blue);
+            z-index: 1;
+            padding-bottom: 20px;
+
+            ol {
+
+                li {
+                    padding: 5px 0px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    list-style: none;
+                    color: #ffffff;
+                    padding: 15px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+            }
+        }
     }
 }
 
@@ -136,6 +186,31 @@ nav {
             >div {
                 border-radius: 5px;
                 border: 1px solid var(--border-color);
+            }
+        }
+
+        .mobile-menu {
+            position: absolute;
+            display: block;
+            width: 100%;
+            transition: all ease .5s;
+            transform: translatey(0);
+            background: var(--blue);
+            z-index: 1;
+            padding-bottom: 20px;
+
+            ol {
+
+                li {
+                    padding: 5px 0px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    list-style: none;
+                    color: #ffffff;
+                    padding: 15px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
             }
         }
     }
@@ -173,7 +248,7 @@ nav {
             transition: all ease .5s;
             transform: translatey(0);
             background: var(--blue);
-            z-index: -1;
+            z-index: 1;
             padding-bottom: 20px;
 
             ol {

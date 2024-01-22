@@ -13,8 +13,8 @@ export default function Home() {
 		dots: true,
 		infinite: true,
 		arrows: true,
-		speed: 100,
-		autoplaySpeed: 1000,
+		speed: 1000,
+		autoplaySpeed: 10,
 		autoplay: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -23,10 +23,13 @@ export default function Home() {
 	return (
 		<section id='hero' className='hero'>
 			<div className='hero-body'>
+				<div className='hero-text'>
+					<h1>awe</h1>
+				</div>
 				<Slider {...settings}>
 					{headerImages.images.map((image) => {
 						return (
-							<div key={image.id}>
+							<div className='image' key={image.id}>
 								<Image
 									className='img'
 									width={400}
