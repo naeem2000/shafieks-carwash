@@ -1,4 +1,46 @@
-.hero {
-    background-color: var(--white);
-    transition: all ease .5s;
-}
+    .slick-prev::before,
+    .slick-next::before {
+        font-size: 50px !important;
+        color: rgba(256, 256, 256, .5) !important;
+        border-radius: 100%;
+        transition: all .2s ease;
+    }
+
+    .slick-prev:hover::before,
+    .slick-next:hover::before {
+        color: red !important;
+    }
+
+    .slick-prev {
+        left: 20px !important;
+        z-index: 2;
+    }
+
+    .slick-next {
+        right: 50px !important;
+        z-index: 2;
+    }
+
+    .hero {
+        background-color: var(--white);
+        transition: all ease .5s;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .hero-body {
+            max-width: 1366px;
+
+            >div {
+
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+
+        }
+    }
