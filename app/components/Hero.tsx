@@ -1,12 +1,12 @@
 'use client';
 
 import 'slick-carousel/slick/slick-theme.css';
-import React, { useEffect } from 'react';
 import 'slick-carousel/slick/slick.css';
 import { headerImages } from '../data';
 import Slider from 'react-slick';
 import Image from 'next/image';
 import '../styles/hero.scss';
+import React from 'react';
 
 export default function Home() {
 	const settings = {
@@ -19,10 +19,6 @@ export default function Home() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	};
-
-	useEffect(() => {
-		console.log(headerImages.images[0].source);
-	});
 
 	return (
 		<section id='hero' className='hero'>
