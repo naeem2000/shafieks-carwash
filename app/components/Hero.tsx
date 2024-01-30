@@ -31,16 +31,25 @@ export default function Home() {
 		slidesToScroll: 1,
 	};
 
-	function getScroll(): void {
-		window.addEventListener('scroll', function () {
-			console.log('awe');
-		});
-		return;
-	}
-
 	useEffect(() => {
-		getScroll();
-		return;
+		window.onscroll = function () {
+			scrollFunction();
+		};
+
+		function scrollFunction() {
+			const nav = document.getElementById('nav');
+			const hero = document.getElementById('hero');
+			if (window.outerWidth > 1024) {
+				if (document.documentElement.scrollTop < 80) {
+					nav!.classList.remove('fixed-nav');
+					hero!.style.marginTop = '0';
+				} else {
+					nav!.classList.add('fixed-nav');
+					hero!.style.marginTop = '85px';
+					hero!.style.transition = 'none';
+				}
+			}
+		}
 	}, []);
 
 	return (

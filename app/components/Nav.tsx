@@ -18,7 +18,7 @@ export default function Nav() {
 	});
 
 	return (
-		<nav>
+		<nav id='nav'>
 			<div className='nav-body max-width'>
 				<ol>
 					{navLinks.links.map((item) => {
