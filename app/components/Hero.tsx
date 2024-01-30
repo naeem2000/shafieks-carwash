@@ -45,7 +45,7 @@ export default function Home() {
 					hero!.style.marginTop = '0';
 				} else {
 					nav!.classList.add('fixed-nav');
-					hero!.style.marginTop = '85px';
+					hero!.style.marginTop = '83px';
 					hero!.style.transition = 'none';
 				}
 			}
@@ -64,21 +64,23 @@ export default function Home() {
 						current coat.
 					</p>
 				</div>
-				<Slider {...settings}>
-					{headerImages.images.map((image) => {
-						return (
-							<div className='image' key={image.id}>
-								<Image
-									className='img'
-									width={400}
-									height={400}
-									src={image.source}
-									alt='header'
-								/>
-							</div>
-						);
-					})}
-				</Slider>
+				<div className='slider'>
+					<Slider {...settings}>
+						{headerImages.images.map((image) => {
+							return (
+								<div className='image' key={image.id}>
+									<Image
+										className='img'
+										width={400}
+										height={400}
+										src={image.source}
+										alt='header'
+									/>
+								</div>
+							);
+						})}
+					</Slider>
+				</div>
 			</div>
 		</section>
 	);

@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0;
 
     .hero-body {
         position: relative;
@@ -35,6 +36,7 @@
                 font-weight: 700;
                 margin-bottom: 20px;
                 text-transform: capitalize;
+                text-align: center;
             }
 
             p {
@@ -78,4 +80,174 @@
     }
 }
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 1024px) {
+    .hero {
+        .hero-body {
+            background-color: var(--blue);
+            width: 100%;
+
+            .hero-text {
+                width: unset;
+                padding: 30px 20px 60px;
+                position: relative;
+
+                h2 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .slider {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        .hero-body {
+            background-color: var(--blue);
+            width: 100%;
+
+            .hero-text {
+                width: unset;
+                padding: 0px 20px 40px;
+                position: relative;
+
+                h2 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .slider {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero {
+        .hero-body {
+            background-color: var(--blue);
+
+            .hero-text {
+                width: unset;
+                padding: 0px 20px 40px;
+                position: relative;
+
+                h2 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .slider {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero {
+        .hero-body {
+            background-color: var(--blue);
+
+            .hero-text {
+                width: unset;
+                padding: 0px 20px 40px;
+                position: relative;
+
+                h2 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .slider {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero {
+        .hero-body {
+            background-color: var(--blue);
+
+            .hero-text {
+                width: unset;
+                padding: 0px 20px 40px;
+                position: relative;
+
+                h2 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+            }
+
+            .slider {
+                display: none;
+            }
+        }
+    }
+}

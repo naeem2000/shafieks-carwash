@@ -23,7 +23,6 @@ header {
     }
 
     .header-right {
-        width: 60%;
         display: flex;
         justify-content: space-between;
 
@@ -188,31 +187,6 @@ header {
     }
 }
 
-@media screen and (max-width: 425px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 0px;
-
-        .header-left {
-            width: 100%;
-            padding: 0;
-
-            h1 {
-                text-align: center;
-                font-size: 40px;
-                line-height: 1.5em;
-            }
-        }
-
-        .header-right {
-            display: none;
-        }
-    }
-}
-
 @media screen and (max-width: 375px) {
     header {
         display: flex;
@@ -227,7 +201,7 @@ header {
 
             h1 {
                 text-align: center;
-                font-size: 37px;
+                font-size: 35px;
                 line-height: 1.5em;
             }
         }
@@ -252,7 +226,7 @@ header {
 
             h1 {
                 text-align: center;
-                font-size: 35px;
+                font-size: 32px;
                 line-height: 1.5em;
             }
         }
