@@ -25,7 +25,7 @@ export default function Home() {
 		infinite: true,
 		arrows: true,
 		speed: 1000,
-		autoplaySpeed: 10,
+		autoplaySpeed: 3000,
 		autoplay: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
