@@ -1,3 +1,5 @@
+'use client';
+
 import { FaPhoneAlt, FaRegClock } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import '../styles/Header.scss';

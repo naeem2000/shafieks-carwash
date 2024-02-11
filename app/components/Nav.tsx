@@ -1,4 +1,5 @@
 'use client';
+
 import { Squash } from 'hamburger-react';
 import React, { useEffect, useState } from 'react';
 import { navLinks } from '../data';

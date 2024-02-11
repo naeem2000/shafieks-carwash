@@ -1,23 +1,28 @@
+'use client';
+
 import AboutImage from '../assets/images/about.jpg';
 import { FaRegCircleCheck } from 'react-icons/fa6';
 import Image from 'next/image';
-import '../styles/about.scss';
+import '../styles/About.scss';
 import React from 'react';
 
 export default function About() {
 	return (
 		<section className='about max-width'>
 			<div className='about-left'>
-				<Image src={AboutImage} alt='about' layout='contain' />
+				<Image src={AboutImage} alt='about' />
 			</div>
 			<div className='about-right'>
 				<div className='about-text'>
-					<p>About Us</p>
+					<p className='bar'>About Us</p>
 					<h2>Car Washing And Detailing</h2>
 					<p>
-						Lorem ipsum dolor sit amet elit. In vitae turpis. Donec in hendre
-						dui, vel blandit massa. Ut vestibu suscipi cursus. Cras quis porta
-						nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum
+						Maintaining the cleanliness and appearance of your vehicle is not
+						only essential for its aesthetic appeal but also plays a crucial
+						role in preserving its overall condition. Car washing and detailing
+						go beyond a simple rinse and scrub; they involve a meticulous
+						process to ensure every nook and cranny is thoroughly cleaned and
+						restored.
 					</p>
 					<div className='list'>
 						<p>

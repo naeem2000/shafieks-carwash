@@ -1,3 +1,4 @@
+import WhatWeDo from './components/WhatWeDo';
 import Header from './components/Header';
 import About from './components/About';
 import Hero from './components/Hero';
@@ -10,6 +11,7 @@ export default function Home() {
 			<Nav />
 			<Hero />
 			<About />
+			<WhatWeDo />
 		</>
 	);
 }
