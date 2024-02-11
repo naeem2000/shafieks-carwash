@@ -123,6 +123,31 @@
     }
 }
 
+@media screen and (max-width: 540px) {
+    .what-we-do {
+
+        .we-do-grid {
+            margin-top: 0px;
+            justify-content: flex-start;
+
+            .we-do-item {
+                max-width: 100%;
+                margin-top: 30px;
+                margin-right: 0px;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 14px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 450px) {
     .what-we-do {
 
