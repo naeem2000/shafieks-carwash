@@ -32,7 +32,7 @@ export default function Contact() {
 				<div className='form-group'>
 					<input type='text' placeholder='Name' />
 					<input type='email' placeholder='Email' />
-					<textarea cols='30' rows='7' placeholder='Description'></textarea>
+					<textarea cols={30} rows={7} placeholder='Description'></textarea>
 				</div>
 			</form>
 		</section>

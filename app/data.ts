@@ -116,13 +116,12 @@ export const whatWeDo = {
 };
 
 //Counter
-
 export const Counts = {
 	counts: [
 		{
 			id: 0,
 			icon: FaLocationDot,
-			text: 'Service Points',
+			text: 'Service Point',
 			number: 1,
 		},
 		{
