@@ -1,5 +1,7 @@
 .counter {
     background: var(--blue);
+    margin: 65px 0px;
+    padding-bottom: 65px;
 
     .counting {
         display: flex;
@@ -7,6 +9,8 @@
         justify-content: space-evenly;
 
         .counters {
+            width: 100%;
+            max-width: 16%;
 
             .counter-body {
                 display: flex;
@@ -14,9 +18,10 @@
                 justify-content: flex-start;
 
                 h1 {
-                    color: #ffffff;
+                    color: var(--white);
                     font-size: 60px;
                     font-weight: 700;
+                    margin-left: 10px;
                 }
             }
 
@@ -24,6 +29,42 @@
                 color: #e2b0b0;
                 font-size: 18px;
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .counter {
+        margin: 48px 0px;
+        padding-bottom: 48px;
+
+        .counting {
+            flex-direction: column;
+
+            .counters {
+                max-width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+                margin-top: 30px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                .counter-body {
+                    justify-content: flex-start;
+
+                    h1 {
+                        font-size: 50px;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                }
             }
         }
     }

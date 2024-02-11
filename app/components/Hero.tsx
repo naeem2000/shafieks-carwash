@@ -39,17 +39,23 @@ export default function Home() {
 		function scrollFunction() {
 			const nav = document.getElementById('nav');
 			const hero = document.getElementById('hero');
+
 			if (window.outerWidth > 1024) {
 				if (document.documentElement.scrollTop < 80) {
-					nav!.classList.remove('fixed-nav');
-					hero!.style.marginTop = '0';
+					if (nav) nav.classList.remove('fixed-nav');
+					if (hero) hero.style.marginTop = '0';
 				} else {
-					nav!.classList.add('fixed-nav');
-					hero!.style.marginTop = '83px';
-					hero!.style.transition = 'none';
+					if (nav) nav.classList.add('fixed-nav');
+					if (hero) {
+						hero.style.marginTop = '83px';
+						hero!.style.transition = 'none';
+					}
 				}
 			}
 		}
+
+		window.addEventListener('scroll', scrollFunction);
+		window.addEventListener('resize', scrollFunction);
 	}, []);
 
 	return (

@@ -15,7 +15,11 @@ export default function Counter() {
 							<div className='counter-body'>
 								<item.icon size={50} color='#E81C2E' />
 								<h1>
-									<CountUp enableScrollSpy duration={2} end={item.number} />
+									<CountUp
+										enableScrollSpy
+										duration={2}
+										end={Number(item.number)}
+									/>
 								</h1>
 							</div>
 							<p>{item.text}</p>
