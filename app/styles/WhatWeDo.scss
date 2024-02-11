@@ -2,4 +2,152 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    .we-do-grid {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 10px;
+
+        .we-do-item {
+            max-width: 25%;
+            margin-top: 30px;
+            margin-right: 27px;
+
+            h4 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+
+            p {
+                max-width: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .what-we-do {
+
+        .we-do-grid {
+            justify-content: space-between;
+
+            .we-do-item {
+                max-width: 100%;
+                margin-top: 30px;
+                margin-right: 0;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .what-we-do {
+
+        .we-do-grid {
+            justify-content: center;
+
+            .we-do-item {
+                max-width: 100%;
+                margin-top: 30px;
+                margin-right: 20px;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .what-we-do {
+
+        .we-do-grid {
+            margin-top: 0px;
+            justify-content: flex-start;
+
+            .we-do-item {
+                max-width: 100%;
+                margin-top: 30px;
+                margin-right: 0px;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 14px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .what-we-do {
+
+        .we-do-grid {
+            margin-top: 0px;
+            justify-content: flex-start;
+
+            .we-do-item {
+                max-width: 100%;
+                margin-top: 30px;
+                margin-right: 0px;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 14px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .what-we-do {
+
+        .we-do-grid {
+            margin-top: 0px;
+            justify-content: flex-start;
+
+            .we-do-item {
+                max-width: 100%;
+                margin-top: 30px;
+                margin-right: 0px;
+
+                h4 {
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 14px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }

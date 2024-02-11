@@ -28,19 +28,42 @@ section {
     z-index: 1;
 }
 
-.bar::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 23px;
-    height: 0px;
-    width: 55px;
-    border-bottom: 2px solid var(--red);
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--blue);
+}
+
+h3 {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: var(--blue);
+}
+
+p {
+    line-height: 1.5em;
 }
 
 @media screen and (max-width: 720px) {
     section {
         padding: 40px 0px 0px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 13px;
     }
 }
 
@@ -61,6 +84,16 @@ button {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 23px;
+    height: 0px;
+    width: 55px;
+    border-bottom: 2px solid var(--red);
 }
 
 @media screen and (max-width: 1280px) {

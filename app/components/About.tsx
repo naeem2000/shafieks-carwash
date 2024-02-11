@@ -14,7 +14,7 @@ export default function About() {
 			</div>
 			<div className='about-right'>
 				<div className='about-text'>
-					<p className='bar'>About Us</p>
+					<h3 className='bar'>About Us</h3>
 					<h2>Car Washing And Detailing</h2>
 					<p>
 						Maintaining the cleanliness and appearance of your vehicle is not
