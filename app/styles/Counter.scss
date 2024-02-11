@@ -1,0 +1,30 @@
+.counter {
+    background: var(--blue);
+
+    .counting {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .counters {
+
+            .counter-body {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                h1 {
+                    color: #ffffff;
+                    font-size: 60px;
+                    font-weight: 700;
+                }
+            }
+
+            p {
+                color: #e2b0b0;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,6 +1,11 @@
 //Hero images
 import hero1 from './assets/images/dummy-header.jpg';
 
+//Icons
+import { FaLocationDot } from 'react-icons/fa6';
+import { IoPerson } from 'react-icons/io5';
+import { FaCar } from 'react-icons/fa';
+
 //What we do grid
 import Interior from './assets/images/interior-wash.png';
 import Window from './assets/images/window-wipe.png';
@@ -9,6 +14,7 @@ import Seats from './assets/images/seats-wash.png';
 import Vacuum from './assets/images/vacuum.png';
 import Wash from './assets/images/wash.png';
 
+//Nav links
 export const navLinks = {
 	links: [
 		{
@@ -39,6 +45,7 @@ export const navLinks = {
 	],
 };
 
+//Hero images
 export const headerImages = {
 	images: [
 		{
@@ -60,6 +67,7 @@ export const headerImages = {
 	],
 };
 
+//What we do grid
 export const whatWeDo = {
 	wedo: [
 		{
@@ -103,6 +111,31 @@ export const whatWeDo = {
 			alt: 'Wet Cleaning',
 			heading: 'Wet Cleaning',
 			text: `Experience a thorough and effective cleaning process to restore your car's exterior to its pristine condition.`,
+		},
+	],
+};
+
+//Counter
+
+export const Counts = {
+	counts: [
+		{
+			id: 0,
+			icon: FaLocationDot,
+			text: 'Service Points',
+			number: 1,
+		},
+		{
+			id: 1,
+			icon: IoPerson,
+			text: 'Happy Clients',
+			number: '630',
+		},
+		{
+			id: 2,
+			icon: FaCar,
+			text: 'Projects Completed',
+			number: 641,
 		},
 	],
 };
