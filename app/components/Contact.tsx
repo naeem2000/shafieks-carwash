@@ -27,14 +27,15 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			<form action=''>
+			<div className='form-section'>
 				<p>Request for a car wash</p>
-				<div className='form-group'>
+				<form action=''>
 					<input type='text' placeholder='Name' />
-					<input type='email' placeholder='Email' />
-					<textarea cols={30} rows={7} placeholder='Description'></textarea>
-				</div>
-			</form>
+					<input type='text' placeholder='Phone number' />
+					<textarea cols={30} rows={10} placeholder='Message'></textarea>
+					<button type='submit'>Submit</button>
+				</form>
+			</div>
 		</section>
 	);
 }

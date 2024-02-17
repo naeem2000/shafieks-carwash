@@ -32,66 +32,101 @@
         }
     }
 
-    form {
+
+    .form-section {
+        background: red;
+        max-width: 400px;
         width: 100%;
-        max-width: 40%;
-        background: var(--red);
         padding: 45px 30px;
         border-radius: 5px;
 
-        >p {
+        p {
             color: var(--white);
             font-size: 25px;
             font-weight: 700;
             margin-bottom: 25px;
         }
 
-        .form-group {
-            width: 100%;
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
 
             input {
-                max-width: 93%;
-                width: 100%;
+                box-sizing: border-box;
+                width: 93%;
                 height: 45px;
-                color: var(--white);
+                color: #fff;
                 padding: 0 15px;
                 border-radius: 5px;
-                border: 1px solid var(--white);
-                background: transparent;
-                outline: none;
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 1.5;
+                border: 1px solid #fff;
+                background: none;
                 margin-bottom: 15px;
+                outline: none;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 1.5em;
+                color: var(--white);
+                transition: all 0.5s ease;
 
                 &::placeholder {
-                    color: var(--white);
-                    font-size: 1rem;
+                    font-size: 15px;
                     font-weight: 400;
-                    line-height: 1.5;
+                    line-height: 1.5em;
+                    color: var(--white);
+                }
+
+                &:focus {
+                    scale: 1.1;
                 }
             }
 
             textarea {
-                max-width: 93%;
-                width: 100%;
-                color: var(--white);
+                box-sizing: border-box;
+                width: 93%;
                 height: 120px;
                 padding: 15px;
+                color: #fff;
                 border-radius: 5px;
-                border: 1px solid var(--white);
-                background: transparent;
-                outline: none;
-                font-size: 1rem;
-                font-weight: 400;
-                line-height: 1.5;
+                border: 1px solid #fff;
+                background: none;
                 margin-bottom: 15px;
+                outline: none;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 1.5em;
+                color: var(--white);
+                transition: all 0.5s ease;
 
                 &::placeholder {
-                    color: var(--white);
-                    font-size: 1rem;
+                    font-size: 15px;
                     font-weight: 400;
-                    line-height: 1.5;
+                    line-height: 1.5em;
+                    color: var(--white);
+                }
+
+                &:focus {
+                    scale: 1.1;
+                }
+            }
+
+            button {
+                width: 100%;
+                color: var(--red);
+                background: var(--white);
+                padding: 10px 30px 12px;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                border: none;
+                border-radius: 60px;
+                transition: ease-out .5s;
+                width: 93%;
+
+                &:hover {
+                    background: var(--blue);
+                    color: var(--white);
                 }
             }
         }
