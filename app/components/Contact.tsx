@@ -2,9 +2,22 @@
 
 import { FaLocationDot } from 'react-icons/fa6';
 import '../styles/Contact.scss';
-import React from 'react';
+import React, { useState } from 'react';
+
+interface Client {
+	name: string;
+	phone: string;
+	message: string;
+}
 
 export default function Contact() {
+	const [client, setClient] = useState<Client>({
+		name: '',
+		phone: '',
+		message: '',
+	});
+	const [success, setSuccess] = useState<boolean>(false);
+
 	return (
 		<section className='contact max-width'>
 			<div className='contact-body'>
