@@ -19,34 +19,27 @@ interface Settings {
 }
 
 export default function Reviews() {
-	const [screenSize, setScreenSize] = useState<number>(window?.outerWidth);
-
-	const settings: Settings = {
-		dots: true,
-		infinite: true,
-		arrows: false,
-		speed: 1000,
-		autoplaySpeed: 3000,
-		autoplay: true,
-		slidesToShow: screenSize,
-		slidesToScroll: 1,
-	};
+	const [sliderSettings, setSliderSettings] = useState<Settings>();
 
 	useEffect(() => {
-		const resize = () => {
-			const screen = (settings.slidesToShow =
-				window?.outerWidth > 1024 ? 3 : 1);
-			setScreenSize(screen);
-			return screen;
+		const settings: Settings = {
+			dots: true,
+			infinite: true,
+			arrows: false,
+			speed: 1000,
+			autoplaySpeed: 3000,
+			autoplay: true,
+			slidesToShow: window?.outerWidth > 1024 ? 3 : 1,
+			slidesToScroll: 1,
 		};
-		resize();
+		setSliderSettings(settings);
 	});
 	return (
 		<section className='reviews max-width'>
 			<h3 className='bar'>Reviews</h3>
 			<h2>What my customers say</h2>
 			<div className='review-slider'>
-				<Slider {...settings}>
+				<Slider {...sliderSettings}>
 					{reviews.review.map((review) => {
 						return (
 							<div className='reviewers'>
