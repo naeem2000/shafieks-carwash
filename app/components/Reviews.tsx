@@ -22,18 +22,20 @@ export default function Reviews() {
 	const [sliderSettings, setSliderSettings] = useState<Settings>();
 
 	useEffect(() => {
-		const settings: Settings = {
-			dots: true,
-			infinite: true,
-			arrows: false,
-			speed: 1000,
-			autoplaySpeed: 3000,
-			autoplay: true,
-			slidesToShow: window?.outerWidth > 1024 ? 3 : 1,
-			slidesToScroll: 1,
-		};
-		setSliderSettings(settings);
-	});
+		if (typeof window !== 'undefined') {
+			const settings: Settings = {
+				dots: true,
+				infinite: true,
+				arrows: false,
+				speed: 1000,
+				autoplaySpeed: 3000,
+				autoplay: true,
+				slidesToShow: window.outerWidth > 1024 ? 3 : 1,
+				slidesToScroll: 1,
+			};
+			setSliderSettings(settings);
+		}
+	}, []);
 	return (
 		<section className='reviews max-width'>
 			<h3 className='bar'>Reviews</h3>
