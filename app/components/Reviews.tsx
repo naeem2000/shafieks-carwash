@@ -26,7 +26,7 @@ export default function Reviews() {
 		speed: 1000,
 		autoplaySpeed: 3000,
 		autoplay: true,
-		slidesToShow: window.outerWidth > 1024 ? 3 : 1,
+		slidesToShow: window?.outerWidth > 1024 ? 3 : 1,
 		slidesToScroll: 1,
 	};
 	return (
