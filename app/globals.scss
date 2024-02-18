@@ -18,6 +18,11 @@ html {
     color: var(--global);
 }
 
+input,
+textarea {
+    font-family: 'Barlow', sans-serif;
+}
+
 body {
     position: relative;
 }
