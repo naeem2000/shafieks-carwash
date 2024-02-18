@@ -145,6 +145,23 @@ export const reviews = {
 	review: [
 		{
 			id: 0,
+			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone.',
+		},
+		{
+			id: 1,
+			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone',
+		},
+		{
+			id: 2,
+			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone',
+		},
+		{
+			id: 3,
+			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone',
+		},
+		{
+			id: 4,
+			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone',
 		},
 	],
 };
