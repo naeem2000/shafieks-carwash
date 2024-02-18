@@ -112,7 +112,7 @@
             }
 
             button {
-                width: 100%;
+                width: 93%;
                 color: var(--red);
                 background: var(--white);
                 padding: 10px 30px 12px;
@@ -122,13 +122,128 @@
                 border: none;
                 border-radius: 60px;
                 transition: ease-out .5s;
-                width: 93%;
 
                 &:hover {
                     background: var(--blue);
                     color: var(--white);
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        flex-direction: row;
+
+        .contact-body {
+
+            h2 {
+                max-width: 400px;
+            }
+
+            .locate {
+                display: flex;
+                margin-bottom: 40px;
+            }
+        }
+
+
+        .form-section {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 25px 30px;
+            align-self: center;
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+
+        .contact-body {
+
+            .locate {
+                display: flex;
+                margin-bottom: 40px;
+            }
+        }
+
+
+        .form-section {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 25px 30px;
+            align-self: center;
+
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contact {
+        flex-direction: column;
+
+        .contact-body {
+
+            .locate {
+                display: flex;
+                margin-bottom: 40px;
+            }
+        }
+
+
+        .form-section {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 25px 10px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contact {
+        flex-direction: column;
+
+        .contact-body {
+
+            .locate {
+                display: flex;
+                margin-bottom: 40px;
+            }
+        }
+
+
+        .form-section {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 25px 10px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contact {
+        flex-direction: column;
+
+        .contact-body {
+
+            .locate {
+                display: flex;
+                margin-bottom: 40px;
+            }
+        }
+
+
+        .form-section {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 25px 10px;
+
         }
     }
 }

@@ -138,3 +138,13 @@ export const Counts = {
 		},
 	],
 };
+
+//Reviews
+
+export const reviews = {
+	review: [
+		{
+			id: 0,
+		},
+	],
+};

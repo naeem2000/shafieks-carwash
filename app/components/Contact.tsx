@@ -16,6 +16,7 @@ export default function Contact() {
 		phone: '',
 		message: '',
 	});
+
 	const [success, setSuccess] = useState<boolean>(false);
 
 	return (
