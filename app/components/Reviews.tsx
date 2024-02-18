@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import { reviews } from '../data';
 import Slider from 'react-slick';
 import '../styles/Reviews.scss';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface Settings {
 	dots: boolean;
@@ -19,6 +19,8 @@ interface Settings {
 }
 
 export default function Reviews() {
+	const [screenSize, setScreenSize] = useState<number>(window?.outerWidth);
+
 	const settings: Settings = {
 		dots: true,
 		infinite: true,
@@ -26,9 +28,19 @@ export default function Reviews() {
 		speed: 1000,
 		autoplaySpeed: 3000,
 		autoplay: true,
-		slidesToShow: window?.outerWidth > 1024 ? 3 : 1,
+		slidesToShow: screenSize,
 		slidesToScroll: 1,
 	};
+
+	useEffect(() => {
+		const resize = () => {
+			const screen = (settings.slidesToShow =
+				window?.outerWidth > 1024 ? 3 : 1);
+			setScreenSize(screen);
+			return screen;
+		};
+		resize();
+	});
 	return (
 		<section className='reviews max-width'>
 			<h3 className='bar'>Reviews</h3>
@@ -37,8 +49,10 @@ export default function Reviews() {
 				<Slider {...settings}>
 					{reviews.review.map((review) => {
 						return (
-							<div key={review.id} className='review'>
-								<p>{review.text}</p>
+							<div className='reviewers'>
+								<div key={review.id} className='review'>
+									<p>{review.text}</p>
+								</div>
 							</div>
 						);
 					})}

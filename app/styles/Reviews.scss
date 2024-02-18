@@ -9,6 +9,7 @@
         padding: 50px 0px;
 
         .review {
+            box-sizing: border-box;
             max-width: 300px;
             width: 100%;
             padding: 20px 15px;
@@ -27,6 +28,64 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .reviews {
+
+        .review-slider {
+            width: 100%;
+            padding: 20px 0px;
+
+
+            .reviewers {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+
+                .review {
+                    padding: 20px 15px;
+                    background: var(--red);
+                    border-radius: 10px;
+
+                    p {
+                        max-width: 270px;
+                        color: var(--white);
+                    }
+                }
+            }
+
+            .slick-dots {
+                bottom: -50px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .reviews {
+
+        .review-slider {
+            width: 100%;
+            padding: 20px 0px;
+
+            .review {
+                max-width: 100%;
+                padding: 20px 15px;
+                background: var(--red);
+                border-radius: 10px;
+
+                p {
+                    max-width: 270px;
+                    color: var(--white);
+                }
+            }
+
+            .slick-dots {
+                bottom: -50px !important;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 320px) {
     .reviews {
 
@@ -35,8 +94,7 @@
             padding: 20px 0px;
 
             .review {
-                max-width: 300px;
-                width: 100%;
+                max-width: 100%;
                 padding: 20px 15px;
                 background: var(--red);
                 border-radius: 10px;
