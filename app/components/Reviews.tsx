@@ -1,11 +1,11 @@
 'use client';
 
+import React, { useEffect, useState } from 'react';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import { reviews } from '../data';
 import Slider from 'react-slick';
 import '../styles/Reviews.scss';
-import React, { useEffect, useState } from 'react';
 
 interface Settings {
 	dots: boolean;
@@ -30,7 +30,7 @@ export default function Reviews() {
 				speed: 1000,
 				autoplaySpeed: 3000,
 				autoplay: true,
-				slidesToShow: window.outerWidth > 1024 ? 3 : 1,
+				slidesToShow: window.outerWidth > 768 ? 3 : 1,
 				slidesToScroll: 1,
 			};
 			setSliderSettings(settings);
@@ -44,8 +44,8 @@ export default function Reviews() {
 				<Slider {...sliderSettings}>
 					{reviews.review.map((review) => {
 						return (
-							<div className='reviewers'>
-								<div key={review.id} className='review'>
+							<div key={review.id} className='reviewers'>
+								<div className='review'>
 									<p>{review.text}</p>
 								</div>
 							</div>

@@ -76,7 +76,6 @@ export default function Home() {
 							return (
 								<div className='image' key={image.id}>
 									<Image
-										className='img'
 										width={400}
 										height={400}
 										src={image.source}

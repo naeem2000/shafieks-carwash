@@ -1,5 +1,14 @@
 //Hero images
-import hero1 from './assets/images/dummy-header.jpg';
+import hero1 from './assets/images/taxi.jpg';
+import hero2 from './assets/images/car2.jpg';
+import hero3 from './assets/images/police.jpg';
+import hero4 from './assets/images/couches2.jpg';
+import hero5 from './assets/images/callout.jpg';
+import hero6 from './assets/images/boerewors.jpg';
+import hero7 from './assets/images/couches.jpg';
+import hero8 from './assets/images/boerewors2.jpg';
+import hero9 from './assets/images/car.jpg';
+import hero10 from './assets/images/callout2.jpg';
 
 //Icons
 import { FaLocationDot } from 'react-icons/fa6';
@@ -54,15 +63,39 @@ export const headerImages = {
 		},
 		{
 			id: 1,
-			source: hero1,
+			source: hero2,
 		},
 		{
 			id: 2,
-			source: hero1,
+			source: hero3,
 		},
 		{
 			id: 3,
-			source: hero1,
+			source: hero4,
+		},
+		{
+			id: 4,
+			source: hero5,
+		},
+		{
+			id: 5,
+			source: hero6,
+		},
+		{
+			id: 6,
+			source: hero7,
+		},
+		{
+			id: 7,
+			source: hero8,
+		},
+		{
+			id: 8,
+			source: hero9,
+		},
+		{
+			id: 9,
+			source: hero10,
 		},
 	],
 };
@@ -145,23 +178,31 @@ export const reviews = {
 	review: [
 		{
 			id: 0,
-			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone.',
+			text: 'Assalamu Alaikum, our couches and carpet is looking even more beautiful now that its dry. Shukran so much Uncle Shafiek. JazakAllah.',
 		},
 		{
 			id: 1,
-			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone',
+			text: 'Aslm, Wow mom is very happy the couches and carpet.',
 		},
 		{
 			id: 2,
-			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone',
+			text: 'Best service and vehicle care In town.',
 		},
 		{
 			id: 3,
-			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone',
+			text: 'Excellent service. My car was full of dog hair and he managed to get rid of all of it. Car is so clean. The polishing job just added that extra touch. Very happy with the service. Thank you again',
 		},
 		{
 			id: 4,
-			text: 'I have been using your services for over 2 years now and I am very satisfied with the results. I highly recommend them to anyone',
+			text: 'Very good service, my car is tip top and sparkling.',
+		},
+		{
+			id: 5,
+			text: `Hi would highly recommend Shafiek's car was to anyone. Great service and someone you can trust with your vehicle. Our cars has never been this clean. Thanks for the great service Shafiek.`,
+		},
+		{
+			id: 6,
+			text: 'They did an excellent job in cleaning my vehicles. They were professional and thorough. Highly recommend.',
 		},
 	],
 };
