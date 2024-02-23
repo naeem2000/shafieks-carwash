@@ -16,6 +16,7 @@
             padding: 20px 15px;
             background: var(--red);
             border-radius: 10px;
+            cursor: grab;
 
             p {
                 max-width: 270px;
@@ -25,6 +26,40 @@
 
         .slick-dots {
             bottom: -50px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .reviews {
+
+        .review-slider {
+            width: 100%;
+            padding: 20px 0px;
+
+
+            .reviewers {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+
+                .review {
+                    padding: 20px 15px;
+                    background: var(--red);
+                    border-radius: 10px;
+                    height: 220px;
+                    margin: 0px 10px;
+
+                    p {
+                        max-width: 270px;
+                        color: var(--white);
+                    }
+                }
+            }
+
+            .slick-dots {
+                bottom: -50px !important;
+            }
         }
     }
 }
@@ -46,7 +81,7 @@
                     padding: 20px 15px;
                     background: var(--red);
                     border-radius: 10px;
-                    height: 180px;
+                    height: 230px;
                     margin: 0px 10px;
 
                     p {
@@ -80,6 +115,7 @@
                     padding: 20px 15px;
                     background: var(--red);
                     border-radius: 10px;
+                    height: 180px;
 
                     p {
                         max-width: 270px;

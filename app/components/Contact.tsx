@@ -1,8 +1,9 @@
 'use client';
 
+import { useForm, ValidationError } from '@formspree/react';
 import { FaLocationDot } from 'react-icons/fa6';
-import '../styles/Contact.scss';
 import React, { useState } from 'react';
+import '../styles/Contact.scss';
 
 interface Client {
 	name: string;
@@ -11,11 +12,7 @@ interface Client {
 }
 
 export default function Contact() {
-	const [client, setClient] = useState<Client>({
-		name: '',
-		phone: '',
-		message: '',
-	});
+	const [state, handleSubmit] = useForm('mqkrbabd');
 
 	const [success, setSuccess] = useState<boolean>(false);
 
@@ -47,15 +44,24 @@ export default function Contact() {
 					referrerPolicy='no-referrer-when-downgrade'
 				></iframe>
 			</div>
-			<div className='form-section'>
-				<p>Request for a car wash</p>
-				<form action=''>
-					<input type='text' placeholder='Name' />
-					<input type='text' placeholder='Phone number' />
-					<textarea cols={30} rows={10} placeholder='Message'></textarea>
-					<button type='submit'>Submit</button>
-				</form>
-			</div>
+			{!state.succeeded ? (
+				<div className='success'>
+					<h2>
+						Thank you for reaching out!
+						<br />I will get back to you soon
+					</h2>
+				</div>
+			) : (
+				<div className='form-section'>
+					<p>Request for a car wash</p>
+					<form onSubmit={handleSubmit}>
+						<input type='text' placeholder='Name' />
+						<input type='text' placeholder='Phone number' />
+						<textarea cols={30} rows={10} placeholder='Message'></textarea>
+						<button type='submit'>Submit</button>
+					</form>
+				</div>
+			)}
 		</section>
 	);
 }

@@ -58,6 +58,22 @@ p {
     line-height: 1.5em;
 }
 
+.slick-dots li button:before {
+    font-size: 15px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--red) !important;
+}
+
+.slick-dots li button:before {
+    color: var(--white) !important;
+}
+
+.slick-dots li button:before {
+    color: var(--blue) !important;
+}
+
 @media screen and (max-width: 720px) {
     section {
         padding: 40px 0px 0px;
