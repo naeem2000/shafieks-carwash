@@ -178,11 +178,11 @@ export const reviews = {
 	review: [
 		{
 			id: 0,
-			text: 'Assalamu Alaikum, our couches and carpet is looking even more beautiful now that its dry. Shukran so much Uncle Shafiek. JazakAllah.',
+			text: 'Greetings, our couches and carpet is looking even more beautiful now that its dry. Shukran so much Uncle Shafiek. JazakAllah.',
 		},
 		{
 			id: 1,
-			text: 'Aslm, Wow mom is very happy the couches and carpet.',
+			text: 'Hi, Wow mom is very happy the couches and carpet.',
 		},
 		{
 			id: 2,
