@@ -35,7 +35,8 @@
     .what-we-do {
 
         .we-do-grid {
-            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
 
             .we-do-item {
                 max-width: 100%;
@@ -63,13 +64,14 @@
             .we-do-item {
                 max-width: 100%;
                 margin-top: 30px;
-                margin-right: 0;
+                margin-right: 20px;
 
                 h4 {
                     font-size: 17px;
                 }
 
                 p {
+                    max-width: 230px;
                     font-size: 14px;
                 }
             }
