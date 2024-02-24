@@ -1,14 +1,14 @@
 //Hero images
+import hero8 from './assets/images/boerewors2.jpg';
+import hero10 from './assets/images/callout2.jpg';
+import hero6 from './assets/images/boerewors.jpg';
+import hero4 from './assets/images/couches2.jpg';
+import hero7 from './assets/images/couches.jpg';
+import hero5 from './assets/images/callout.jpg';
+import hero3 from './assets/images/police.jpg';
 import hero1 from './assets/images/taxi.jpg';
 import hero2 from './assets/images/car2.jpg';
-import hero3 from './assets/images/police.jpg';
-import hero4 from './assets/images/couches2.jpg';
-import hero5 from './assets/images/callout.jpg';
-import hero6 from './assets/images/boerewors.jpg';
-import hero7 from './assets/images/couches.jpg';
-import hero8 from './assets/images/boerewors2.jpg';
 import hero9 from './assets/images/car.jpg';
-import hero10 from './assets/images/callout2.jpg';
 
 //Icons
 import { FaLocationDot } from 'react-icons/fa6';
@@ -29,12 +29,12 @@ export const navLinks = {
 		{
 			id: 0,
 			name: 'Home',
-			link: '#Home',
+			link: '/',
 		},
 		{
 			id: 1,
 			name: 'About',
-			link: '#about',
+			link: '/About',
 		},
 		{
 			id: 2,

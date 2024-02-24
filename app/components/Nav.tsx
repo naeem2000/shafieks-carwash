@@ -4,6 +4,7 @@ import { Squash } from 'hamburger-react';
 import React, { useEffect, useState } from 'react';
 import { navLinks } from '../data';
 import '../styles/Nav.scss';
+import Link from 'next/link';
 
 export default function Nav() {
 	const [openNav, setOpenNav] = useState<boolean>(false);
@@ -11,11 +12,13 @@ export default function Nav() {
 	useEffect(() => {
 		const hero = document.getElementById('hero');
 
-		if (openNav) {
-			hero!.style.marginTop = '265px';
-		} else {
-			hero!.style.marginTop = '0px';
-		}
+		window.onload = function () {
+			if (openNav) {
+				hero!.style.marginTop = '265px';
+			} else {
+				hero!.style.marginTop = '0px';
+			}
+		};
 	});
 
 	return (
@@ -25,7 +28,9 @@ export default function Nav() {
 					{navLinks.links.map((item) => {
 						return (
 							<li key={item.id}>
-								<a href={item.link}>{item.name}</a>
+								<Link key={item.id} href={item.link}>
+									{item.name}
+								</Link>
 							</li>
 						);
 					})}
