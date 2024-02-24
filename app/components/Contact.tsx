@@ -5,16 +5,8 @@ import { FaLocationDot } from 'react-icons/fa6';
 import React, { useState } from 'react';
 import '../styles/Contact.scss';
 
-interface Client {
-	name: string;
-	phone: string;
-	message: string;
-}
-
 export default function Contact() {
 	const [state, handleSubmit] = useForm('mqkrbabd');
-
-	const [success, setSuccess] = useState<boolean>(false);
 
 	return (
 		<section className='contact max-width'>
@@ -44,7 +36,7 @@ export default function Contact() {
 					referrerPolicy='no-referrer-when-downgrade'
 				></iframe>
 			</div>
-			{!state.succeeded ? (
+			{state.succeeded ? (
 				<div className='success'>
 					<h2>
 						Thank you for reaching out!
@@ -55,9 +47,14 @@ export default function Contact() {
 				<div className='form-section'>
 					<p>Request for a car wash</p>
 					<form onSubmit={handleSubmit}>
-						<input type='text' placeholder='Name' />
-						<input type='text' placeholder='Phone number' />
-						<textarea cols={30} rows={10} placeholder='Message'></textarea>
+						<input type='text' placeholder='Name' name='name' />
+						<input type='text' placeholder='Phone number' name='phone number' />
+						<textarea
+							cols={30}
+							rows={10}
+							placeholder='Message'
+							name='message'
+						></textarea>
 						<button type='submit'>Submit</button>
 					</form>
 				</div>
