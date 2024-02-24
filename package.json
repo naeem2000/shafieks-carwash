@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@types/react-slick": "^0.23.13",
     "@types/slick-carousel": "^1.6.40",
     "hamburger-react": "^2.5.0",

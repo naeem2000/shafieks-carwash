@@ -30,7 +30,7 @@ export default function Reviews() {
 				speed: 1000,
 				autoplaySpeed: 3000,
 				autoplay: true,
-				slidesToShow: window.outerWidth > 768 ? 3 : 1,
+				slidesToShow: window.outerWidth > 650 ? 3 : 1,
 				slidesToScroll: 1,
 			};
 			setSliderSettings(settings);
