@@ -8,7 +8,7 @@ import React from 'react';
 
 export default function About() {
 	return (
-		<section className='about max-width'>
+		<section className='about max-width' id='about'>
 			<div className='about-left'>
 				<Image src={AboutImage} alt='about' />
 			</div>

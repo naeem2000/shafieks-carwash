@@ -11,15 +11,14 @@ export default function Nav() {
 
 	useEffect(() => {
 		const hero = document.getElementById('hero');
-
-		window.onload = function () {
+		if (hero) {
 			if (openNav) {
-				hero!.style.marginTop = '265px';
+				hero!.style.marginTop = '300px';
 			} else {
 				hero!.style.marginTop = '0px';
 			}
-		};
-	});
+		}
+	}, [openNav]);
 
 	return (
 		<nav id='nav'>

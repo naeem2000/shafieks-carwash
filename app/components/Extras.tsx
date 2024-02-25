@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Extras() {
 	return (
-		<section className='extras max-width'>
+		<section className='extras max-width' id='extras'>
 			<h3 className='bar'>Extras</h3>
 			<h2>Mobile Car Wash & Boerewors</h2>
 			<div className='grid'>

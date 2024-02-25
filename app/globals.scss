@@ -74,6 +74,29 @@ p {
     color: var(--blue) !important;
 }
 
+.scroll-to-top {
+    border-radius: 50% !important;
+    background: var(--blue) !important;
+    width: 50px !important;
+    height: 50px !important;
+
+    svg {
+        fill: var(--red) !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+}
+
 @media screen and (max-width: 720px) {
     section {
         padding: 40px 0px 0px;
@@ -86,6 +109,11 @@ p {
 
     h3 {
         font-size: 13px;
+    }
+
+    .scroll-to-top {
+        right: 10px !important;
+        bottom: 10px !important;
     }
 }
 

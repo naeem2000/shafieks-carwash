@@ -37,7 +37,7 @@ export default function Reviews() {
 		}
 	}, []);
 	return (
-		<section className='reviews max-width'>
+		<section className='reviews max-width' id='reviews'>
 			<h3 className='bar'>Reviews</h3>
 			<h2>What my customers say</h2>
 			<div className='review-slider'>
