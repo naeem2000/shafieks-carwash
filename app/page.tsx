@@ -4,6 +4,7 @@ import Contact from './components/Contact';
 import Reviews from './components/Reviews';
 import Header from './components/Header';
 import Extras from './components/Extras';
+import Footer from './components/Footer';
 import About from './components/About';
 import Hero from './components/Hero';
 import Nav from './components/Nav';
@@ -20,6 +21,7 @@ export default function Home() {
 			<Reviews />
 			<Extras />
 			<Contact />
+			<Footer />
 		</>
 	);
 }

@@ -130,6 +130,25 @@
     }
 }
 
+@media screen and (max-width: 625px) {
+    .counter {
+        margin: 48px 0px 0px;
+        padding-bottom: 48px;
+
+        .counting {
+            flex-direction: column;
+
+            .counters {
+                margin-top: 30px;
+
+                &:first-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 450px) {
     .counter {
         margin: 48px 0px 0px;
