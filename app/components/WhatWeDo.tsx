@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function WhatWeDo() {
 	return (
-		<section className='what-we-do max-width'>
+		<section className='what-we-do max-width' id='whatwedo'>
 			<h3 className='bar'>WHAT WE DO?</h3>
 			<h2>Premium Washing Services</h2>
 			<div className='we-do-grid'>

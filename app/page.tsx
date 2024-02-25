@@ -1,3 +1,6 @@
+'use client';
+
+import ScrollToTop from 'react-scroll-to-top';
 import WhatWeDo from './components/WhatWeDo';
 import Counter from './components/Counter';
 import Contact from './components/Contact';
@@ -22,6 +25,7 @@ export default function Home() {
 			<Extras />
 			<Contact />
 			<Footer />
+			<ScrollToTop smooth />
 		</>
 	);
 }

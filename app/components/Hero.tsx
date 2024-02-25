@@ -47,7 +47,7 @@ export default function Home() {
 				} else {
 					if (nav) nav.classList.add('fixed-nav');
 					if (hero) {
-						hero.style.marginTop = '83px';
+						hero.style.marginTop = '78px';
 						hero!.style.transition = 'none';
 					}
 				}

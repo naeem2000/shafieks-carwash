@@ -9,7 +9,7 @@ export default function Contact() {
 	const [state, handleSubmit] = useForm('mqkrbabd');
 
 	return (
-		<section className='contact max-width'>
+		<section className='contact max-width' id='contact'>
 			<div className='contact-body'>
 				<h3 className='bar'>Washing Location</h3>
 				<h2>Car Washing & Care Location</h2>

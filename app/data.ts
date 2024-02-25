@@ -28,26 +28,36 @@ export const navLinks = {
 	links: [
 		{
 			id: 0,
-			name: 'Home',
-			link: '/',
+			name: 'Hero',
+			link: '#hero',
 		},
 		{
 			id: 1,
 			name: 'About',
-			link: '/About',
+			link: '#about',
 		},
 		{
 			id: 2,
+			name: 'What We Do',
+			link: '#whatwedo',
+		},
+		{
+			id: 3,
 			name: 'Service',
 			link: '#service',
 		},
 		{
-			id: 3,
-			name: 'Testimonials',
-			link: '#testimonials',
+			id: 4,
+			name: 'Reviews',
+			link: '#reviews',
 		},
 		{
-			id: 4,
+			id: 5,
+			name: 'Extras',
+			link: '#extras',
+		},
+		{
+			id: 6,
 			name: 'Contact',
 			link: '#contact',
 		},

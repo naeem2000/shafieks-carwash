@@ -3,6 +3,7 @@ footer {
     text-align: center;
     width: 100%;
     padding: 30px 0;
+    margin-top: 50px;
 
     p {
         color: var(--white);
@@ -15,6 +16,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     footer {
+        font-size: 13px;
         margin-top: 40px;
         padding: 20px 0;
     }
