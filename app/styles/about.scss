@@ -100,14 +100,22 @@
             margin-top: 40px;
 
             .about-text {
-                p {
-                    &:nth-child(1) {
-                        font-size: 13px;
-                        margin-bottom: 20px;
-                    }
 
-                    &:nth-child(3) {
-                        margin-top: 20px;
+                .text-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    p {
+                        &:nth-child(1) {
+                            font-size: 13px;
+                            margin-bottom: 20px;
+                        }
+
+                        &:nth-child(3) {
+                            margin-top: 20px;
+                        }
                     }
                 }
 

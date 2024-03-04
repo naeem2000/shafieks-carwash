@@ -14,16 +14,18 @@ export default function About() {
 			</div>
 			<div className='about-right'>
 				<div className='about-text'>
-					<h3 className='bar'>About Us</h3>
-					<h2>Car Washing And Detailing</h2>
-					<p>
-						Maintaining the cleanliness and appearance of your vehicle is not
-						only essential for its aesthetic appeal but also plays a crucial
-						role in preserving its overall condition. Car washing and detailing
-						go beyond a simple rinse and scrub; they involve a meticulous
-						process to ensure every nook and cranny is thoroughly cleaned and
-						restored.
-					</p>
+					<div className='text-head'>
+						<h3 className='bar'>About Us</h3>
+						<h2>Car Washing And Detailing</h2>
+						<p>
+							Maintaining the cleanliness and appearance of your vehicle is not
+							only essential for its aesthetic appeal but also plays a crucial
+							role in preserving its overall condition. Car washing and
+							detailing go beyond a simple rinse and scrub; they involve a
+							meticulous process to ensure every nook and cranny is thoroughly
+							cleaned and restored.
+						</p>
+					</div>
 					<div className='list'>
 						<p>
 							<FaRegCircleCheck color='#E81C2E' />
